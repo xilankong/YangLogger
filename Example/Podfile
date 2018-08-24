@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YangLogger_Example' do
+  pod 'YangLogger', :path => '../'
+
+  target 'YangLogger_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
