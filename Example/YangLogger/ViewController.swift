@@ -7,12 +7,13 @@
 //
 
 import UIKit
-
+import YangLogger
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        LogError("错误信息")
+        LogInfo("普通消息")
     }
 
     override func didReceiveMemoryWarning() {

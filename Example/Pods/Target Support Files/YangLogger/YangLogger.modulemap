@@ -1,0 +1,6 @@
+framework module YangLogger {
+  umbrella header "YangLogger-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -31,7 +31,7 @@
 		1B1199D66139460FA2B0E4BF /* Pods-YangLogger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YangLogger_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YangLogger_Example/Pods-YangLogger_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1D1C999088B6FAD4224271A4 /* Pods-YangLogger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YangLogger_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YangLogger_Example/Pods-YangLogger_Example.release.xcconfig"; sourceTree = "<group>"; };
 		472695A1B32A656EB03F77F3 /* Pods_YangLogger_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YangLogger_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		47D435650C60879B57DC9EC6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		47D435650C60879B57DC9EC6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		556E69EEB8FBCF914F4CC978 /* Pods-YangLogger_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YangLogger_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YangLogger_Tests/Pods-YangLogger_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		56A6B233FD3944B54F00DF8E /* Pods-YangLogger_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YangLogger_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YangLogger_Tests/Pods-YangLogger_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* YangLogger_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YangLogger_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,9 +44,9 @@
 		607FACE51AFB9204008FA782 /* YangLogger_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YangLogger_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7F158D1B4F6F425A0F97326B /* YangLogger.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YangLogger.podspec; path = ../YangLogger.podspec; sourceTree = "<group>"; };
+		7F158D1B4F6F425A0F97326B /* YangLogger.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YangLogger.podspec; path = ../YangLogger.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9835611CEF928690F8C9A470 /* Pods_YangLogger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YangLogger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE6E4DC9D31B7B0043E39DC4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DE6E4DC9D31B7B0043E39DC4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 8738YWRZYU;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 8738YWRZYU;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -268,10 +270,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YangLogger_Example/Pods-YangLogger_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/YangLogger/YangLogger.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YangLogger.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,6 +473,7 @@
 			baseConfigurationReference = 1B1199D66139460FA2B0E4BF /* Pods-YangLogger_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8738YWRZYU;
 				INFOPLIST_FILE = YangLogger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -484,6 +489,7 @@
 			baseConfigurationReference = 1D1C999088B6FAD4224271A4 /* Pods-YangLogger_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8738YWRZYU;
 				INFOPLIST_FILE = YangLogger/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -498,6 +504,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 56A6B233FD3944B54F00DF8E /* Pods-YangLogger_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 8738YWRZYU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -520,6 +527,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 556E69EEB8FBCF914F4CC978 /* Pods-YangLogger_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 8738YWRZYU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

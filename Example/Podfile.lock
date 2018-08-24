@@ -1,0 +1,28 @@
+PODS:
+  - CocoaLumberjack (3.4.2):
+    - CocoaLumberjack/Default (= 3.4.2)
+    - CocoaLumberjack/Extensions (= 3.4.2)
+  - CocoaLumberjack/Default (3.4.2)
+  - CocoaLumberjack/Extensions (3.4.2):
+    - CocoaLumberjack/Default
+  - YangLogger (0.1.0):
+    - CocoaLumberjack
+
+DEPENDENCIES:
+  - YangLogger (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CocoaLumberjack
+
+EXTERNAL SOURCES:
+  YangLogger:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: db7cc9e464771f12054c22ff6947c5a58d43a0fd
+  YangLogger: 66197456bc019b68bfd38b31895162c19f0be040
+
+PODFILE CHECKSUM: b683ef6fcd5657770be5bd93e1936c40c306e580
+
+COCOAPODS: 1.5.0

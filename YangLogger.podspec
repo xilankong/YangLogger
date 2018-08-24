@@ -24,14 +24,14 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/xilankong/YangLogger'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'xilankong' => 'young.huang@jfz.com' }
+  s.author           = { 'xilankong' => 'xilankong@126.com' }
   s.source           = { :git => 'https://github.com/xilankong/YangLogger.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'YangLogger/Classes/**/*'
-  
+  s.dependency 'CocoaLumberjack'
   # s.resource_bundles = {
   #   'YangLogger' => ['YangLogger/Assets/*.png']
   # }
