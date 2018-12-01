@@ -1,6 +1,5 @@
 //
 //  Logger.swift
-//  i
 //
 //  Created by lbencs on 24/01/2018.
 //  Copyright © 2018 lbencs. All rights reserved.

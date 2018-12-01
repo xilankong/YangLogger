@@ -1,5 +1,5 @@
 //
-//  RealLogFormatter.swift
+//  LogFormatter.swift
 //
 //  Created by yanghuang on 16/12/5.
 //  Copyright © 2016年 yanghuang. All rights reserved.
